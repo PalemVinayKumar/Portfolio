@@ -71,21 +71,25 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex space-x-4">
-            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
-              <a href="https://github.com/PalemVinayKumar" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
-             <a href="https://www.linkedin.com/in/palemvinaykumar/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
-              <a href="mailto:palemvinaykumar01@gmail.com" target="_blank" rel="noopener noreferrer"></a>
-              <Mail className="h-5 w-5" />
-            </Button>
-          </div>
+          {/* Social Links */}
+<div className="flex space-x-4">
+  <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+    <a href="https://github.com/PalemVinayKumar" target="_blank" rel="noopener noreferrer">
+      <Github className="h-5 w-5" />
+    </a>
+  </Button>
+  <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+    <a href="https://www.linkedin.com/in/palemvinaykumar/" target="_blank" rel="noopener noreferrer">
+      <Linkedin className="h-5 w-5" />
+    </a>
+  </Button>
+  <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+    <a href="mailto:palemvinaykumar01@gmail.com" target="_blank" rel="noopener noreferrer">
+      <Mail className="h-5 w-5" />
+    </a>
+  </Button>
+</div>
+
         </div>
 
         {/* Profile Image */}
