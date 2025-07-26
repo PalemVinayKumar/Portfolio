@@ -60,10 +60,16 @@ const Hero = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button size="lg" className="animate-glow group">
-              <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-              Download CV
-            </Button>
+            <Button asChild>
+  <a
+    href="/PalemVinayKumar_CV.pdf"
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Download CV
+  </a>
+</Button>
             <Button variant="outline" size="lg" className="bg-transparent">
               <Mail className="mr-2 h-4 w-4" />
               Let's Talk
@@ -71,28 +77,34 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex space-x-4">
-  <Button
-    variant="ghost"
-    size="icon"
-    className="hover:bg-primary/20 transition-all duration-300 hover:scale-110"
-    asChild
-  >
+          
+          <div className="flex items-center space-x-4">
+  <Button size="icon" variant="outline" asChild>
     <a
       href="https://github.com/PalemVinayKumar"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Github className="h-5 w-5" />
+      <Github className="h-4 w-4" />
     </a>
   </Button>
-
-  <Button variant="ghost"size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110"asChild>
-      <a href="https://www.linkedin.com/in/palemvinaykumar/" target="_blank" rel="noopener noreferrer"> <Linkedin className="h-5 w-5" /> </a>
+  <Button size="icon" variant="outline" asChild>
+    <a
+      href="https://www.linkedin.com/in/palemvinaykumar/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Linkedin className="h-4 w-4" />
+    </a>
   </Button>
-
-  <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
-    <a href="mailto:palemvinaykumar01@gmail.com" target="_blank" rel="noopener noreferrer"> <Mail className="h-5 w-5" /></a>
+  <Button size="icon" variant="outline" asChild>
+    <a
+      href="mailto:palemvinaykumar01@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Mail className="h-4 w-4" />
+    </a>
   </Button>
 </div>
 
