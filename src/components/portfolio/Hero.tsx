@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Download, Github, Linkedin, Mail, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileAvatar from '/lovable-uploads/Profile.jpeg"';
+import profileAvatar from '../../assets/profile-avatar.jpg';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
