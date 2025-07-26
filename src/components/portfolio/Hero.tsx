@@ -78,7 +78,11 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+<<<<<<< HEAD
              <a href="www.linkedin.com/in/palem-vinay-kumar-7a8492167" target="_blank" rel="noopener noreferrer">
+=======
+             <a href="https://www.linkedin.com/in/palemvinaykumar/" target="_blank" rel="noopener noreferrer">
+>>>>>>> 86bbcce (🔧 Updated social links and customized portfolio files)
               <Linkedin className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
