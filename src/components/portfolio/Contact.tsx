@@ -31,7 +31,7 @@ const Contact = () => {
       icon: MapPin,
       label: "Location",
       value: "Madanapalle, Andhra Pradesh, India",
-      href: ""
+      href: "#"
     }
   ];
 
@@ -39,25 +39,19 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/PalemVinayKumar",
-      target:"_blank",
-      rel:"noopener noreferrer",
+      href: "#",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/palem-vinay-kumar-7a8492167/",
-      target:"_blank",
-      rel:"noopener noreferrer",
+      href: "#",
       color: "hover:text-blue-400"
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:palemvinaykumar01@gmail.com?subject=Hello%20Vinay&body=Hi%20Vinay,%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect...",
-      target:"_blank",
-      rel:"noopener noreferrer",
+      href: "mailto:palemvinaykumar01@gmail.com",
       color: "hover:text-primary"
     }
   ];
@@ -94,8 +88,8 @@ const Contact = () => {
               <h3 className="text-2xl font-bold">Let's Connect</h3>
               <p className="text-muted-foreground leading-relaxed">
                 I'm always excited to discuss new opportunities, innovative projects, 
-                or potential collaborations. Whether you're looking for a GenAI developer, 
-                Python developer or software engineer, I'd love to hear from you.
+                or potential collaborations. Whether you're looking for a Python developer, 
+                data analyst, or software engineer, I'd love to hear from you.
               </p>
             </div>
 
@@ -128,8 +122,6 @@ const Contact = () => {
                     variant="ghost"
                     size="icon"
                     className={`hover:scale-110 transition-all duration-300 ${social.color}`}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                     asChild
                   >
                     <a href={social.href} aria-label={social.label}>
