@@ -104,7 +104,11 @@ const scrollToAbout = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
-              <a href="mailto:palemvinaykumar01@gmail.com?subject=Hello%20Vinay&body=Hi%20Vinay,%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect..." target="_blank" rel="noopener noreferrer">
+              <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=palemvinaykumar01@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
