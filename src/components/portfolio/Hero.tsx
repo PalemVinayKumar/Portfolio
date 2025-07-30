@@ -80,10 +80,10 @@ const scrollToAbout = () => {
 
   {/* Let's Talk Button - opens Google Chat */}
   <a
-    href="https://mail.google.com/chat/u/0/#chat/wt/palemvinaykumar01@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=palemvinaykumar01@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
     <Button variant="outline" size="lg" className="bg-transparent">
       <Mail className="mr-2 h-4 w-4" />
       Let's Talk
