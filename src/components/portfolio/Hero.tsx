@@ -71,11 +71,12 @@ const scrollToAbout = () => {
 <div className="flex flex-col sm:flex-row gap-4">
   {/* Download CV Button */}
   <a href="/vinay-resume.pdf" download>
-    <Button size="lg" className="animate-glow group">
-      <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-      Download CV
-    </Button>
-  </a>
+  <Button size="lg" className="animate-glow group">
+    <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+    Download CV
+  </Button>
+</a>
+
 
   {/* Let's Talk Button - opens Google Chat */}
   <a
