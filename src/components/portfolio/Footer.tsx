@@ -46,15 +46,19 @@ const Footer = () => {
             <h4 className="font-semibold">Connect With Me</h4>
             <div className="flex space-x-3 md:justify-end">
               <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:text-gray-400" asChild>
-                <a href="https://github.com/PalemVinayKumar" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/PalemVinayKumar" target="_blank" rel="noopener noreferrer"> 
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:text-blue-400">
-                <Linkedin className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:text-gray-400" asChild>
+                <a href="https://www.linkedin.com/in/palem-vinay-kumar-7a8492167/" target="_blank" rel="noopener noreferrer"> 
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:text-primary">
-                <Mail className="h-5 w-5" />
+              <Button variant="ghost" size="icon" className="hover:scale-110 transition-all duration-300 hover:text-gray-400" asChild>
+                <a href="mailto:palemvinaykumar01@gmail.com?subject=Hello%20Vinay&body=Hi%20Vinay,%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect..." target="_blank" rel="noopener noreferrer"> 
+                  <Mail className="h-5 w-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -64,8 +68,7 @@ const Footer = () => {
         <div className="border-t border-border/20 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="flex items-center space-x-2 text-muted-foreground">
             <span>© {currentYear} Palem Vinay Kumar. Made with</span>
-            <Heart className="h-4 w-4 text-red-400 animate-pulse" />
-            <span>and React</span>
+            <span>React</span>
           </div>
 
           {/* Back to Top */}

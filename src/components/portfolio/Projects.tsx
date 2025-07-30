@@ -31,7 +31,7 @@ const Projects = () => {
         "Data integrity assurance"
       ],
       status: "Completed",
-      category: "Data Engineering"
+      category: "OpTool"
     },
     {
       title: "Inmian - AI Assistant",
@@ -59,15 +59,15 @@ const Projects = () => {
         "Real-time information"
       ],
       status: "Completed",
-      category: "Productivity"
+      category: "AI Assistant"
     }
   ];
 
   const categoryColors = {
     "Cybersecurity": "bg-red-500/10 text-red-400 border-red-500/20",
-    "Data Engineering": "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    "OpTool": "bg-blue-500/10 text-blue-400 border-blue-500/20",
     "AI/ML": "bg-purple-500/10 text-purple-400 border-purple-500/20",
-    "Productivity": "bg-green-500/10 text-green-400 border-green-500/20"
+    "AI Assistant": "bg-green-500/10 text-green-400 border-green-500/20"
   };
 
   return (

@@ -5,7 +5,7 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const Experience = () => {
   const experience = {
     title: "Executive Operations Specialist",
-    company: "Multinational Corporation",
+    company: " Aegis (Startek)",
     duration: "Oct 2020 – Oct 2023",
     location: "Remote/Hybrid",
     description: [
