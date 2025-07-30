@@ -68,19 +68,27 @@ const scrollToAbout = () => {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            {/* Download CV Button - now wrapped in an <a> tag */}
-            <a href="/vinay-resume.pdf" download>
-              <Button size="lg" className="animate-glow group">
-                <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
-                Download CV
-              </Button>
-            </a>
-            <Button variant="outline" size="lg" className="bg-transparent">
-              <Mail className="mr-2 h-4 w-4" />
-              Let's Talk
-            </Button>
-          </div>
+<div className="flex flex-col sm:flex-row gap-4">
+  {/* Download CV Button */}
+  <a href="/vinay-resume.pdf" download>
+    <Button size="lg" className="animate-glow group">
+      <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+      Download CV
+    </Button>
+  </a>
+
+  {/* Let's Talk Button - opens Google Chat */}
+  <a
+    href="https://mail.google.com/chat/u/0/#chat/wt/palemvinaykumar01@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button variant="outline" size="lg" className="bg-transparent">
+      <Mail className="mr-2 h-4 w-4" />
+      Let's Talk
+    </Button>
+  </a>
+</div>
 
           {/* Social Links */}
           <div className="flex space-x-4">
