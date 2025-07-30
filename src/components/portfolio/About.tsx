@@ -14,7 +14,7 @@ const About = () => {
   const skills = {
     languages: ['Python', 'Java', 'JavaScript', 'HTML', 'CSS'],
     databases: ['Oracle SQL'],
-    tools: ['MS Office', 'React.js', 'Git'],
+    tools: ['MS Office', 'React.js','VMware' , 'Git'],
     domains: ['Cybersecurity', 'Web Development', 'Data Operations']
   };
 
@@ -33,7 +33,7 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transforming from operations excellence to software development innovation
+            Turning real-world business challenges into AI-driven solutions — from frontline execution to full-stack GenAI development.
           </p>
         </div>
 
@@ -43,17 +43,19 @@ const About = () => {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed">
-                With over 3 years of experience in multinational operations, I specialized in 
-                data validation, process optimization, and cross-functional collaboration. 
-                My passion for technology led me to complete my Master of Computer Applications (MCA) 
-                with a focus on AI, Cybersecurity, and Web Technologies.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Now I'm actively pursuing opportunities to leverage my analytical mindset and 
-                technical skills in Python development, data analysis, and software engineering. 
-                I bring a unique perspective combining operational excellence with cutting-edge 
-                technical capabilities.
-              </p>
+  With over 3 years of leadership experience in multinational operations, I specialized in data integrity, workflow optimization, and client-focused process management. 
+  As an Assistant Team Lead and Subject Matter Expert at Aegis (Startek), I worked extensively on internal database platforms like Optool to streamline structured data pipelines and ensure SLA-driven performance.
+</p>
+
+<p className="text-muted-foreground leading-relaxed">
+  My deep interest in solving real-world problems through intelligent systems led me to pursue a <b>Master of Computer Applications (MCA)</b> with a strong focus on Artificial Intelligence and Full Stack Development.
+</p>
+
+<p className="text-muted-foreground leading-relaxed">
+  Today, I’m building next-generation AI tools — from GenAI chatbots to intelligent document assistants — using Python, LangChain, Hugging Face, and open-source LLMs. 
+  I bring a unique blend of enterprise experience and modern AI engineering skills, enabling me to design scalable, context-aware, and user-centric solutions.
+</p>
+
             </div>
 
             {/* Quick Stats */}

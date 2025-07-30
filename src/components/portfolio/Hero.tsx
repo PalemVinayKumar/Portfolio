@@ -5,13 +5,13 @@ import profileAvatar from '../../assets/profile-avatar.jpg';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const roles = ['Python Developer', 'Data Analyst', 'Software Engineer'];
+  const roles = ['GenAI Developer' ,'AI Engineer', 'Domain-Aware Tech Lead'];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex];
     let currentIndex = 0;
-    
+
     const typeInterval = setInterval(() => {
       if (currentIndex <= currentRole.length) {
         setDisplayText(currentRole.slice(0, currentIndex));
@@ -26,6 +26,13 @@ const Hero = () => {
 
     return () => clearInterval(typeInterval);
   }, [currentRoleIndex]);
+
+const scrollToAbout = () => {
+  const aboutSection = document.getElementById("about");
+  if (aboutSection) {
+    aboutSection.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -54,22 +61,21 @@ const Hero = () => {
           </div>
 
           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-            Dedicated Operations professional with 3+ years of experience, recently completed MCA 
-            and now pursuing opportunities in software development and data analytics.
+           GenAI Developer | AI Engineer | Former SME & Senior Executive Operations with 3+ Years of Experience in Operational Tools
+           </p>
+           <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
+           Bridging real-world domain expertise with AI engineering to build intelligent, scalable, and user-centric solutions using LLM, AI, LangChain, Hugging Face and Python.
           </p>
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild>
-  <a
-    href="/PalemVinayKumar_CV.pdf"
-    download
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Download CV
-  </a>
-</Button>
+            {/* Download CV Button - now wrapped in an <a> tag */}
+            <a href="/vinay-resume.pdf" download>
+              <Button size="lg" className="animate-glow group">
+                <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
+                Download CV
+              </Button>
+            </a>
             <Button variant="outline" size="lg" className="bg-transparent">
               <Mail className="mr-2 h-4 w-4" />
               Let's Talk
@@ -77,38 +83,23 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          
-          <div className="flex items-center space-x-4">
-  <Button size="icon" variant="outline" asChild>
-    <a
-      href="https://github.com/PalemVinayKumar"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Github className="h-4 w-4" />
-    </a>
-  </Button>
-  <Button size="icon" variant="outline" asChild>
-    <a
-      href="https://www.linkedin.com/in/palemvinaykumar/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Linkedin className="h-4 w-4" />
-    </a>
-  </Button>
-  <Button size="icon" variant="outline" asChild>
-    <a
-      href="mailto:palemvinaykumar01@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <Mail className="h-4 w-4" />
-    </a>
-  </Button>
-</div>
-
-
+          <div className="flex space-x-4">
+            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+              <a href="https://github.com/PalemVinayKumar" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+              <a href="https://www.linkedin.com/in/palem-vinay-kumar-7a8492167/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" className="hover:bg-primary/20 transition-all duration-300 hover:scale-110" asChild>
+              <a href="mailto:palemvinaykumar01@gmail.com?subject=Hello%20Vinay&body=Hi%20Vinay,%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20connect..." target="_blank" rel="noopener noreferrer">
+                <Mail className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* Profile Image */}
@@ -130,9 +121,14 @@ const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-primary" />
-      </div>
+      <div
+  onClick={scrollToAbout}
+  className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer z-50"
+  aria-label="Scroll to about section"
+  style={{ pointerEvents: "auto" }}
+>
+    <ArrowDown className="h-6 w-6 text-primary" />
+  </div>
     </section>
   );
 };
